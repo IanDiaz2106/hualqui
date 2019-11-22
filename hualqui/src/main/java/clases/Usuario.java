@@ -15,4 +15,44 @@ public class Usuario {
     String NombreUsu;
     String Email;
     int edad;
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getNombreUsu() {
+        return NombreUsu;
+    }
+
+    public void setNombreUsu(String NombreUsu) {
+        this.NombreUsu = NombreUsu;
+    }
+
+    public String getEmail() {
+        return Email;
+    }
+
+    public void setEmail(String Email) {
+        this.Email = Email;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
 }

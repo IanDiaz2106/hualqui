@@ -16,6 +16,7 @@ public class Multa {
     String Velocidad;
     String Avenida;
     String Pasaje;
+    String TipoInfractor;
 
     public int getIdentificador() {
         return Identificador;
