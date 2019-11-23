@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Nov 23, 2019 1:39:03 PM by Hibernate Tools 5.4.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="hualqui" dynamic-insert="false" dynamic-update="false" mutable="true" name="tablas.Multa" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="multa">
+        <id name="idmulta" type="int">
+            <column name="idmulta"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="calle" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="calle"/>
+        </property>
+        <property generated="never" lazy="false" name="tipo" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="tipo"/>
+        </property>
+        <property generated="never" lazy="false" name="velocidad" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="velocidad"/>
+        </property>
+        <property generated="never" lazy="false" name="avenida" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="avenida"/>
+        </property>
+        <property generated="never" lazy="false" name="pasaje" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="pasaje"/>
+        </property>
+    </class>
+</hibernate-mapping>
