@@ -113,13 +113,13 @@ public class ApelacionesDAO {
     public List < Apelacion > getAllApelacion() {
 
         Transaction transaction = null;
-        List < Apelacion > listOfUser = null;
+        List < Apelacion > listOfApelacion = null;
         try (Session session = HibernateUtils.getSessionFactory().openSession()) {
             // start a transaction
             transaction = session.beginTransaction();
             // get an user object
 
-            listOfUser = session.createQuery("from User").getResultList();
+            listOfApelacion = session.createQuery("from apelacion").getResultList();
 
             // commit transaction
             transaction.commit();
@@ -129,6 +129,6 @@ public class ApelacionesDAO {
             }
             e.printStackTrace();
         }
-        return listOfUser;
+        return listOfApelacion;
     }
 }

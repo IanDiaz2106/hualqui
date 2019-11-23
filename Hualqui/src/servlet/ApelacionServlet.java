@@ -63,9 +63,9 @@ public class ApelacionServlet extends HttpServlet {
 
     private void listApelacion(HttpServletRequest request, HttpServletResponse response)
     throws SQLException, IOException, ServletException {
-        List < Apelacion > listUser = ApelacionesDAO.getAllApelacion();
-        request.setAttribute("listUser", listUser);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("user-list.jsp");
+        List < Apelacion > listApelacion = ApelacionesDAO.getAllApelacion();
+        request.setAttribute("listApelacion", listApelacion);
+        RequestDispatcher dispatcher = request.getRequestDispatcher("ListarApelacion.jsp");
         dispatcher.forward(request, response);
     }
 

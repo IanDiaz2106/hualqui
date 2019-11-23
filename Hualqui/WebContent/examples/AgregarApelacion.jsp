@@ -200,7 +200,7 @@
                       <label class="col-sm-2 col-form-label">Motivo apelacion</label>
                       <div class="col-sm-10">
                         <div class="form-group">
-                          <input type="text" class="form-control">
+                          <input type="text" class="form-control" <c:out value='${Apelacion.motivo}' />>
                           <span class="bmd-help">A block of help text that breaks onto a new line.</span>
                         </div>
                       </div>
